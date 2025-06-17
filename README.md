@@ -33,16 +33,16 @@ If your game crashes check the ```eml_log.txt``` file in the bin directory and m
 
 If you want to make your own c# mod dll, this will get you started:
 
-**IMPORTANT INFORMATION: Cosmoteer uses .NET 7. Because of this, you cannot use Harmony since it does not Support .NET 7(yet).**  
-There is an [alpha version of Harmony](https://github.com/pardeike/Harmony/tree/feature/monomod-core) now that supports .NET 7 but you need to compile it yourself and i haven't tested it yet.
+**IMPORTANT INFORMATION: Cosmoteer uses .NET 9. Because of this, you cannot use Harmony since it does not Support .NET 9 (yet).**
+There is an [alpha version of Harmony](https://github.com/pardeike/Harmony/tree/feature/monomod-core) that supports .NET 9 but you need to compile it yourself and I haven't tested it yet.
 
-- Use the [.NET 7 Version of EML](https://github.com/C0dingschmuser/EnhancedModLoader/releases) / Workshop version
+- Use the [.NET 9 Version of EML](https://github.com/C0dingschmuser/EnhancedModLoader/releases) / Workshop version
 - Use Visual Studio C# Class Library for .NET or .NET Standard Preset
-- Use target SDK 7.0.200 (Cosmoteer & EML both use this version), specify this in a global.json in your Project Directory. [See more](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json)
-- Use Runtime Framework Version 7.0.3
+- Use target SDK 9.0.301 (Cosmoteer & EML both use this version), specify this in a global.json in your Project Directory. [See more](https://learn.microsoft.com/en-us/dotnet/core/tools/global-json)
+- Use Runtime Framework Version 9.0.301
 - Change your .csproj TargetFramework to
 ```csproj
-<TargetFramework>net7.0-windows</TargetFramework>
+<TargetFramework>net9.0-windows</TargetFramework>
 ```
 - Allow Unsafe Blocks
 - Set GenerateRuntimeConfigurationFiles to true
